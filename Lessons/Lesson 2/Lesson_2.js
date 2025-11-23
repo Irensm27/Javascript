@@ -79,4 +79,26 @@
 // console.log(user2);
 // console.log(user);
 // ----------------ЛОГІЧНІ РОЗГАЛУДЖЕННЯ IF-------------------------
+// let color = 'green';
+// if(color === 'red'){
+//     console.log('test');
+// }
+// else{
+//     console.log('go');
+// }
+//
+let color = prompt('enter color');
+let isroadclear = confirm('is road clear');
+if (color === 'green' &&  isroadclear){
+    console.log('go')
+}
+else if(color === 'yellow'){
+    console.log('wait');
+}
+else if(color === 'red'){
+    console.log('stop');
+}
+else{
+    console.log('error');
+}
 
