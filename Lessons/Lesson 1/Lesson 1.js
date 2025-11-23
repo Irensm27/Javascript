@@ -77,22 +77,22 @@
 // console.log(+true);
 
 // -------------------TYPEOF--------------------
-let n = 100;
-let s = 'asd';
-let b = true;
-
-console.log(typeof n);
-console.log(typeof s);
-console.log(typeof b);
-
-// let x = undefined;
-// console.log(typeof x);
-
-console.log(typeof undefined);
-console.log(typeof null);
-console.log(typeof NaN);
-
-console.log(!!0);
-console.log(!!null);
-console.log(!!undefined);
-console.log(!!'');
+// let n = 100;
+// let s = 'asd';
+// let b = true;
+//
+// console.log(typeof n);
+// console.log(typeof s);
+// console.log(typeof b);
+//
+// // let x = undefined;
+// // console.log(typeof x);
+//
+// console.log(typeof undefined);
+// console.log(typeof null);
+// console.log(typeof NaN);
+//
+// console.log(!!0);
+// console.log(!!null);
+// console.log(!!undefined);
+// console.log(!!'');

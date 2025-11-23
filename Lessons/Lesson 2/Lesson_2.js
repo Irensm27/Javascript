@@ -87,18 +87,53 @@
 //     console.log('go');
 // }
 //
-let color = prompt('enter color');
-let isroadclear = confirm('is road clear');
-if (color === 'green' &&  isroadclear){
-    console.log('go')
+// let color = prompt('enter color');
+// let isroadclear = confirm('is road clear');
+// if (color === 'green' &&  isroadclear){
+//     console.log('go')
+// }
+// else if(color === 'yellow'){
+//     console.log('wait');
+// }
+// else if(color === 'red'){
+//     console.log('stop');
+// }
+// else{
+//     console.log('error');
+// }
+//--------------------- SWITCH--------------------------
+// let color = prompt('enter color');
+// switch (color){
+//     case 'green':
+//         console.log('green');
+//         break;
+//     case 'red':
+//         console.log('red');
+//         break;
+//     case 'blue':
+//         console.log('blue');
+//         break;
+//     default:
+//         console.log('error');
+//         break;
+//
+// }
+// -----------------ТЕРНАРНИЙ ОПЕРАТОР-------------------------
+let obj = {
+    id: 1,
+    name: "Vasya",
+    age: 19
 }
-else if(color === 'yellow'){
-    console.log('wait');
-}
-else if(color === 'red'){
-    console.log('stop');
-}
-else{
-    console.log('error');
-}
+// let access;
+// let conditional = obj.age >18;
+// if (obj.age > 18) {
+//     access = true;
+// }
+// else {
+//     access = false;
+// }
+// console.log(access);
+//
+let access = obj.age>18? 'Yes' : 'No';
+console.log(access);
 
