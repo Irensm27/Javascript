@@ -106,18 +106,21 @@
 // for (const number of arr) {
 //     console.log(number);
 // }
+
 //-----------------5---------------------
 // – Створити масив з 10 строкових елементів. Вивести в консоль всі його елементи в циклі.
 // let arr = ['Katya', 'vanya', 'ira', 'artem', 'kostya', 'natasha', 'nastya', 'vova', 'andrey', 'anya'];
 // for (const string of arr) {
 //     console.log(string);
 // }
+
 //------------------6----------------------
 //– Створити масив з 10 елементів будь-якого типу. Вивести в консоль всі його елементи в циклі.
 // let arr = [28, 14, 3.47, 'vanya', true, 584, 'hello', 'world', 5.26, 17];
 // for (const arrElement of arr) {
 //     console.log(arrElement);
 // }
+
 //-------------------7-----------------------
 //– Створити масив з 10 елементів числового, стрічкового і булевого типу. За допомогою if та typeof вивести тільки булеві елементи
 // let arr = [28, 14, true, 'vanya', true, 584, 'hello', 'world', false, 17];
@@ -127,18 +130,21 @@
 // for (const arrElement of arr) {
 //     if (typeof arrElement === "boolean") console.log(arrElement);
 // }
+
 //--------------------8--------------------------
 //– Створити масив з 10 елементів числового, стрічкового і булевого типу. За допомогою if та typeof вивести тільки числові елементи
 // let arr = [28, 14, true, 'vanya', true, 584, 'hello', 'world', false, 17];
 // for (const arrElement of arr) {
 //     if(typeof arrElement==="number") console.log(arrElement);
 // }
+
 //---------------------9-------------------------
 //– Створити масив з 10 елементів числового, стрічкового і булевого типу. За допомогою if та typeof вивести тільки рядкові елементи
 // let arr = [28, 14, true, 'vanya', true, 584, 'hello', 'world', false, 17];
 // for (const arrElement of arr) {
 //     if(typeof arrElement === 'string') console.log(arrElement);
 // }
+
 //---------------------10--------------------------
 //– Створити порожній масив. Наповнити його 10 елементами (різними за типами) через звернення до конкретних індексів. Вивести в консоль всі його елементи в циклі.
 // let arr = [];
@@ -155,15 +161,142 @@
 // for (const arrElement of arr) {
 //     console.log(arrElement);
 // }
+
 //----------------------11----------------------------
 //– Створити цикл for на 10  ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
 // for (let i = 0; i < 10; i++) {
 //     console.log(i);
 //     document.write('i')
 // }
+
 //-----------------------12------------------------------
 //– Створити цикл for на 100 ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
-for (let i = 0; i < 100; i++) {
-    console.log(i);
-    document.write()
-}
+// for (let i = 0; i < 100; i++) {
+//     console.log(i);
+//     document.write(i)
+// }
+
+//-----------------------13-------------------------------
+//– Створити цикл for на 100 ітерацій з кроком 2. Вивести поточний номер кроку через console.log та document.write
+// for (let i = 0; i < 100; i+=2) {
+//     console.log(i);
+//     document.write(i);
+// }
+
+//-----------------------14------------------------------
+//– Створити цикл for на 100 ітерацій. Вивести тільки парні кроки. через console.log + document.write
+// for (let i = 0; i < 100; i++) {
+//     if (i % 2 === 0) {
+//         console.log(i);
+//         document.write(i);
+//     }
+
+//-----------------------15-------------------------------
+//– Створити цикл for на 100 ітерацій. Вивести тільки непарні кроки. через console.log + document.write
+// for (let i = 0; i < 100; i++) {
+//     if (i % 2 !== 0) {
+//         console.log(i);
+//         document.write(i);
+//     }
+// }
+
+//-----------------------16--------------------------------
+// створити масив книжок (назва, кількість сторінок, автори , жанри).
+// – знайти найбільшу книжку.
+// – знайти книжку/ки з найбільшою кількістю жанрів
+// – знайти книжку/ки з найдовшою назвою
+// – знайти книжку/ки, які писали 2 автори
+// – знайти книжку/ки, які писав 1 автор
+// let books = [
+//     {title: "JS Intro", pages: 150, authors: ["Tom"], genres: ["tech", "js"]},
+//     {title: "Long Book Title Example", pages: 350, authors: ["Anna", "Kate"], genres: ["novel"]},
+//     {title: "Short", pages: 90, authors: ["Mike"], genres: ["fantasy", "adventure", "magic"]},
+//     {title: "Mega Story", pages: 400, authors: ["Alice", "Bob"], genres: ["horror", "mystery"]}
+// ];
+// let biggest = books[0];
+// for (let b of books) {
+//     if (b.pages > biggest.pages) biggest = b;
+// }
+// console.log(biggest);
+// let maxGenres = books[0];
+// for (const i of books) {
+//     if (i.genres.length > maxGenres.genres.length) maxGenres = i;
+// }
+// console.log(maxGenres);
+// let maxTitle = books[0];
+// for (const i of books) {
+//     if (i.title.length > maxTitle.title.length) maxTitle = i;
+// }
+// console.log(maxTitle);
+// let twoAuthors = [];
+// for (const i of books) {
+//     if( i.authors.length === 2) twoAuthors.push(i);
+// }
+// console.log(twoAuthors);
+// let oneAuthor = [];
+// for (const i of books) {
+//     if( i.authors.length === 1) oneAuthor.push(i);
+// }
+// console.log(oneAuthor);
+
+//-------------------------17----------------------------
+// 1. Створити пустий масив та :
+//     a. заповнити його 50 парними числами за допомоги циклу.
+//     b. заповнити його 50 непарними числами за допомоги циклу.
+//     c. Заповнити масив 20-ма рандомними числами. (Google: Generate random number JS)
+// d. Заповнити масив 20-ма рандомними числами в діапазоні від 8 до 732 (Google: Generate random number JS)
+//  let arr = [];
+// for (let i = 0; i < 100; i++) {
+//    if (i %2 ===0 ) arr.push(i);
+// }
+// console.log(arr);
+// for (let i = 0; i < 100; i++) {
+//     if (i %2 !== 0) arr.push(i);
+// }
+// console.log(arr);
+// for (let i = 0; i < 20; i++) {
+//     arr.push(Math.floor(Math.random() *100))
+// }
+// console.log(arr);
+// for (let i = 0; i < 20; i++) {
+//     arr.push(Math.floor(Math.random() * (732 - 8 + 1)) + 8);
+// }
+// console.log(arr);
+// 2. Вивести за допомогою console.log кожен третій елемент
+// 3. Вивести за допомогою console.log кожен третій елемент, тільки якщо цей елемент є парним.
+// 4. Вивести за допомогою console.log кожен третій елемент, тільки якщо цей елемент є парним, та записати їх в новий масив
+// 5. Вивести кожен елемент масиву, сусід справа якого є парним
+// EXAMPLE: [ 1, 2, 3, 5, 7, 9, 56, 8, 67 ] -> Має бути виведено 1, 9, 56
+// let arr = [];
+// for (let i = 0; i < 20; i++) {
+//     arr.push(Math.floor(Math.random() * (732 - 8 + 1)) + 8);}
+// console.log(arr);
+// for (let i = 0; i < arr.length; i+= 3) {
+//     console.log(arr[i]);
+// }
+// for (let i = 0; i < arr.length; i+= 3) {
+//     if( arr[1] %2 ===0) console.log(arr[i]);
+// }
+// let arr1= [];
+// for (let i = 0; i < arr.length; i+= 3) {
+//     if( arr[1] %2 ===0) arr1.push(arr[i]);
+//         console.log(arr[i]);
+// }
+// let arr = [ 1, 2, 3, 5, 7, 9, 56, 8, 67 ];
+// for (let i = 0; i < arr.length; i++) {
+//     if ( arr[i+1]%2 ===0) console.log(arr[i]);
+// }
+// 6. Є масив з числами [100,250,50,168,120,345,188], Які характеризують вартість окремої покупки. Обрахувати середній чек.
+// 7. Створити масив з рандомними значеннями, помножити всі його елементи на 5 та перемістити їх в інший масив.
+// 8. Створити масив з будь-якими значеннями (стрінги, числа, і тд…). пройтись по ньому, і, якщо елемент є числом, додати його в інший масив.
+// let arr = [100,250,50,168,120,345,188];
+// let sum = 0;
+// for (const m of arr) sum += m;{
+//     console.log(sum/arr.length);
+// }
+// let arr = [100,250,50,168,120,345,188];
+// let arr1 = [];
+// for (const n of arr)  arr1.push(n*5);
+// console.log(arr1);
+    
+
