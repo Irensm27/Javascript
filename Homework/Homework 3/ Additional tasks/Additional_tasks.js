@@ -298,5 +298,74 @@
 // let arr1 = [];
 // for (const n of arr)  arr1.push(n*5);
 // console.log(arr1);
-    
 
+//--------------------18--------------------
+// – Дано 2 масиви з рівною кількістю об’єктів.
+//     Масиви:
+// let usersWithId = [
+// {id: 1, name: 'vasya', age: 31, status: false},
+// {id: 2, name: 'petya', age: 30, status: true},
+// {id: 3, name: 'kolya', age: 29, status: true},
+// {id: 4, name: 'olya', age: 28, status: false}
+// ];
+// let citiesWithId = [
+// {user_id: 3, country: 'USA', city: 'Portland'},
+// {user_id: 1, country: 'Ukraine', city: 'Ternopil'},
+// {user_id: 2, country: 'Poland', city: 'Krakow'},
+// {user_id: 4, country: 'USA', city: 'Miami'}
+// ];
+// // З’єднати в один об’єкт користувача та місто з відповідними “id” та “user_id” .
+// // Записати цей об’єкт в новий масив
+// //
+// let arr = [];
+// for (let i = 0; i < usersWithId.length; i++) {
+//     const user = usersWithId[i];
+//     for (let j = 0; j < citiesWithId.length; j++) {
+//         const city = citiesWithId[j];
+//         if( user.id === city.user_id) user.address = city;
+//     }
+//     arr.push(user);
+// }
+// console.log(arr);
+
+//------------------19------------------------
+//– Взяти масив з 10 чисел або створити його. Вивести в консоль тільки ті елементи, значення яких є парними.
+// let arr = [18, 45, 398, 47, 654, 47, 8, 23, 58, 12, 43];
+// for (const number of arr) {
+//     if (number %2 === 0) console.log(number);
+// }
+
+//------------------20--------------------------
+//– Взяти масив з 10 чисел або створити його. Створити 2-й порожній масив. За допомогою будь-якого циклу скопіювати значення одного масиву в інший.
+// let arr = [18, 45, 398, 47, 654, 47, 8, 23, 58, 12, 43];
+// let arr1 = [];
+// for (const i of arr) {
+//     arr1.push(i);
+// }
+// console.log(arr1);
+
+//--------------------21------------------------
+// – Дано масив: [ ‘a’, ‘b’, ‘c’] . За допомогою циклу for зібрати всі букви в слово.
+// let arr = ['a', 'b', 'c'];
+// let a = '';
+// for (let i = 0; i < arr.length; i++) {
+//     a += arr[i];
+// }
+// console.log(a);
+
+// – Дано масив: [ ‘a’, ‘b’, ‘c’] . За допомогою циклу while зібрати всі букви в слово.
+// let arr = ['a', 'b', 'c'];
+// let a = '';
+// let i = 0;
+// while (i < arr.length) {
+//     a += arr[i];
+//     i++
+// } console.log(a)
+
+//– Дано масив: [ ‘a’, ‘b’, ‘c’] . За допомогою циклу for of зібрати всі букви в слово.
+// let arr = ['a', 'b', 'c'];
+// let a = '';
+// for (const string of arr) {
+//     a +=string;
+// }
+// console.log(a);
