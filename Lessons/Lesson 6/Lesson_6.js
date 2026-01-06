@@ -50,17 +50,17 @@
 // console.log(concat.includes(3));
 
 //----------ФУНКЦІЇ МАСИВІВ З КОЛБЕКАМИ---------------
-let users = [
-    {name: 'Vasya', age:27, status: false},
-    {name: 'Olya', age:32, status: true},
-    {name: 'Ira', age:14, status: false},
-    {name: 'Kate', age:28, status: true},
-    {name: 'Vanya', age:24, status: false},
-    {name: 'Kolya', age:36, status: false},
-    {name: 'Vasya', age:20, status: true},
-    {name: 'Kristina', age:25, status: false},
-    {name: 'Vasya', age:17, status: false},
-];
+// let users = [
+//     {name: 'Vasya', age:27, status: false},
+//     {name: 'Olya', age:32, status: true},
+//     {name: 'Ira', age:14, status: false},
+//     {name: 'Kate', age:28, status: true},
+//     {name: 'Vanya', age:24, status: false},
+//     {name: 'Kolya', age:36, status: false},
+//     {name: 'Vasya', age:20, status: true},
+//     {name: 'Kristina', age:25, status: false},
+//     {name: 'Vasya', age:17, status: false},
+// ];
 // users.forEach(function (value, index, array){
 //     console.log(value);
 // });
@@ -80,5 +80,42 @@ let users = [
 // console.log(users.every(value => value.status));
 // console.log(users.some(value => value.status));
 
-let sort = users.sort((u1, u2) => {return u1.age -u2.age; });
-console.log(sort);
+// let sort = users.sort((u1, u2) => {return u1.age -u2.age; });
+// console.log(sort);
+
+// console.log(users.sort((a, b) => {
+//     if (a.name > b.name){
+//     return 1;
+// }
+//     if (a.name < b.name){
+//         return -1;
+//     }
+//     if (a.name === b.name){
+//         return 0;
+//     }
+//  }));
+
+// let reduce = users.reduce((acc, user) => {
+//     if(user.status){
+//         acc.statT.push(user)
+//     }else{
+//         acc.statF.push(user)
+//     } return acc;
+//     },
+//     {statT:[], statF:[]});
+// console.log(reduce);
+
+//----------------КОЛБЕК ФУНКЦІЇ----------------------
+// function foo(bar){
+//     console.log(bar)
+// }
+// foo(function (){
+//     return 100;
+// });
+
+// function calc(a, b, callback){
+//      return callback(a, b);
+// }
+//
+// console.log(calc(10, 20, (a, b) => a + b
+// ));
