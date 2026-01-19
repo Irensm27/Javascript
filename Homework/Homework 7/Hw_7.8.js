@@ -32,40 +32,14 @@ const cinderellas =[
 ]
 const prince = new Prince('Artem', 20, 36);
 
-// for (const cinderella of cinderellas) {
-//     if(cinderella.footSize === prince.slipper){
-//         prince.wife = cinderella
-//         console.log(prince)
-//     }
-// }
-// const cinderella2 = cinderellas.find(cinderella => (cinderella.footSize === prince.slipper));
-// prince.wife = cinderella2;
-// console.log(prince);
-
-
-// Array.prototype.myForEach = function (callback) {
-//     for (let i = 0; i < this.length; i++) {
-//         callback(this[i], i, this);
-//     }
-// };
-// cinderellas.myForEach(cinderella => {
-//     if (cinderella.footSize === prince.slipper) {
-//         prince.wife = cinderella;
-//     }
-// });
-// console.log(prince);
-Array.prototype.myFilter = function (callback) {
-    const result = [];
-    for (let i = 0; i < this.length; i++) {
-        if (callback(this[i], i, this)) {
-            result.push(this[i]);
-        }
+for (const cinderella of cinderellas) {
+    if(cinderella.footSize === prince.slipper){
+        prince.wife = cinderella
+        console.log(prince)
     }
-    return result;
-};
-const match = cinderellas.myFilter(
-    cinderella => cinderella.footSize === prince.slipper
-);
-
-prince.wife = match[0];
+}
+const cinderella2 = cinderellas.find(cinderella => (cinderella.footSize === prince.slipper));
+prince.wife = cinderella2;
 console.log(prince);
+
+
