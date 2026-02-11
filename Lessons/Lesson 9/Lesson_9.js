@@ -9,5 +9,8 @@
 // console.log(elementsByTagName);
 // let elementsByTagName1 = elementById.getElementsByTagName('li');
 // console.log(elementsByTagName1);
-console.log(document.querySelector('ul'));
-console.log(document.querySelectorAll('li'));
+// console.log(document.querySelector('ul'));
+// console.log(document.querySelectorAll('li'));
+
+
+
