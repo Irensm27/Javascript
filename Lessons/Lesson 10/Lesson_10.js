@@ -54,25 +54,27 @@
 // user.age = 31;
 // localStorage.setItem('user', JSON.stringify(user));
 
-let users = [
-    {name: 'Vasya', age:27, status: false},
-    {name: 'Olya', age:32, status: true},
-    {name: 'Ira', age:14, status: false},
-    {name: 'Kate', age:28, status: true},
-    {name: 'Vanya', age:24, status: false},
-    {name: 'Kolya', age:36, status: false},
-    {name: 'Vasya', age:20, status: true},
-    {name: 'Kristina', age:25, status: false},
-    {name: 'Vasya', age:17, status: false},
-];
-localStorage.setItem('users', JSON.stringify(users));
+// let users = [
+//     {name: 'Vasya', age:27, status: false},
+//     {name: 'Olya', age:32, status: true},
+//     {name: 'Ira', age:14, status: false},
+//     {name: 'Kate', age:28, status: true},
+//     {name: 'Vanya', age:24, status: false},
+//     {name: 'Kolya', age:36, status: false},
+//     {name: 'Vasya', age:20, status: true},
+//     {name: 'Kristina', age:25, status: false},
+//     {name: 'Vasya', age:17, status: false},
+// ];
+// localStorage.setItem('users', JSON.stringify(users));
+//
+// let usersJSON = localStorage.getItem('users');
+// console.log(usersJSON);
+// let parse = JSON.parse(usersJSON);
+// console.log(parse);
+// localStorage.setItem('users', JSON.stringify(parse));
 
-let usersJSON = localStorage.getItem('users');
-console.log(usersJSON);
-let parse = JSON.parse(usersJSON);
-console.log(parse);
-localStorage.setItem('users', JSON.stringify(parse));
-
+// ---------------------ЛОКАЛЬНЕ СХОВИЩЕ DEMO------------------------
+localStorage.clear()
 
 
 
