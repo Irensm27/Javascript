@@ -11,5 +11,5 @@
 fetch('https://dummyjson.com/products')
     .then(res => res.json())
     .then(result => {
-
+    document.write(result)
     });
