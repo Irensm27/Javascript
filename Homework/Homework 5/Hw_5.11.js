@@ -6,4 +6,4 @@ let sum = (arr) => {
     }
     return a;
 }
-console.log(sum([0, 5, 3]));;
+console.log(sum([0, 5, 3]));
